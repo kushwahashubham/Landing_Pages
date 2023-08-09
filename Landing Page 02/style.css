@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#left {
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+
+#lnav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#lnavr i {
+  color: royalblue;
+}
+
+#lnavr {
+  display: flex;
+  align-items: center;
+}
+
+#left #textCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textCenter h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+
+#textCenter p {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.6;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#textCenter a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #494848cb;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#right {
+  height: 100%;
+  width: 60%;
+  background-color: aqua;
+}
+
+#rtop {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-color: blue;
+}
+
+#left-rtop {
+  height: 100%;
+  width: 55%;
+  background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: 0 80%;
+}
+#right-rtop {
+  height: 100%;
+  width: 45%;
+  background-image: url(https://images.unsplash.com/photo-1586788224331-947f68671cf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#rbottom {
+  height: 50%;
+  width: 100%;
+  background-color: red;
+  background-image: url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
